@@ -1,0 +1,17 @@
+{
+  "name": "tstutorial",
+  "version": "1.0.0",
+  "description": "tutorial",
+  "main": "variableMe.js",
+  "scripts": {
+    "test": "console.log('hello world')"
+  },
+  "keywords": [
+    "ts"
+  ],
+  "author": "Young",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.5.2"
+  }
+}
