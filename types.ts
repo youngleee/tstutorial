@@ -1,10 +1,6 @@
 import { Status } from "./status";
 import {Todo} from './Todo';
-
-
-interface Metadata {
-    assignee: string;
-}
+import {Metadata} from './Metadata';
 
 const todo: Todo<Metadata> = {
     description: 'Typescript lernen',
