@@ -1,8 +1,6 @@
-interface Todo<TData> {
-    description: string;
-    status: string | number;
-    data: TData;
-}
+import { Status } from "./status";
+import {Todo} from './Todo';
+
 
 interface Metadata {
     assignee: string;
