@@ -1,13 +1,30 @@
-interface Todo {
+interface Todo<TData> {
     description: string;
-    status: string;
+    status: string | number;
+    data: TData;
 }
 
-const todo:Todo = {
+interface Metadata {
+    assignee: string;
+}
+
+const todo: Todo<Metadata> = {
     description: 'Typescript lernen',
-    status: 'open'
+    status: 'open',
+    data: {
+        assignee: 'personi'
+    }
 };
 
 let text = 'Hallo Welt!';
 
-console.log(text);
+const add = function(left: number, right: number): number {
+    return left + right;
+};
+
+// der typ ist nicht bekannt (uknown), besser als any weil es type checking enthaelt
+const printer = function (value: string): void {
+
+};
+
+console.log(text); 
